@@ -1,14 +1,20 @@
-﻿namespace Tetris
+﻿using System.Text;
+
+namespace Tetris
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.SetWindowSize(40, 30);
-            Console.SetBufferSize(40, 30);
+            Point[] points = new Point[3];
+            points[0] = new Point(1, 2, '*');
+            points[1] = new Point(3, 4, '#');
+            points[2] = new Point(5, 6, '@');
 
-            Point p1 = new Point(2, 3, '*');
-            p1.Draw();
+            foreach (Point dot in points)
+            {
+                dot.Draw();
+            }
 
             Console.ReadLine();
         }
