@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using Tetris.Figures;
 
 namespace Tetris
 {
@@ -6,15 +7,8 @@ namespace Tetris
     {
         static void Main(string[] args)
         {
-            Point[] points = new Point[3];
-            points[0] = new Point(1, 2, '*');
-            points[1] = new Point(3, 4, '#');
-            points[2] = new Point(5, 6, '@');
-
-            foreach (Point dot in points)
-            {
-                dot.Draw();
-            }
+            Square sq = new Square(0, 0);
+            sq.Draw();
 
             Console.ReadLine();
         }

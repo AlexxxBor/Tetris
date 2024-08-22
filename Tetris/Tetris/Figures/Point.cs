@@ -1,4 +1,4 @@
-﻿namespace Tetris
+﻿namespace Tetris.Figures
 {
     internal class Point
     {
